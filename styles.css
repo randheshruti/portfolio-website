@@ -1,0 +1,153 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6fb;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #342b63;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 12px;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffd166;
+}
+
+/* Home hero */
+.hero {
+    text-align: center;
+    padding: 70px 20px;
+    background-color: #e8e5ff;
+}
+
+.hero h2 {
+    color: #342b63;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    margin-bottom: 12px;
+}
+
+/* Button */
+.btn {
+    display: inline-block;
+    background-color: #6654df;
+    color: white;
+    padding: 10px 22px;
+    margin-top: 15px;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.btn:hover {
+    background-color: #4938b5;
+}
+
+/* About and content */
+.about, .content {
+    max-width: 1000px;
+    margin: 35px auto;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.about h2, .content h2 {
+    color: #342b63;
+    margin-bottom: 15px;
+}
+
+/* Project cards */
+.project-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 25px;
+}
+
+.project-card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    width: 280px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+    text-align: left;
+}
+
+.project-card h3 {
+    color: #6654df;
+    margin-bottom: 10px;
+}
+
+/* Contact form */
+.contact-form {
+    max-width: 500px;
+    margin: 25px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    text-align: left;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+    width: 100%;
+}
+
+.contact-form button {
+    padding: 12px;
+    background-color: #6654df;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #4938b5;
+}
+
+/* Footer */
+footer {
+    background-color: #342b63;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}
