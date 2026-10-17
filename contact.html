@@ -1,40 +1,85 @@
-
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact | My Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+
+    <title>Contact Shruti Randhe | Portfolio</title>
+    <meta name="description" content="Contact Shruti Randhe, an MCA student and aspiring UI/UX designer, for collaboration, projects, and professional opportunities.">
+
+    <!-- Replace this URL with your actual deployed contact page URL -->
+    <link rel="canonical" href="https://YOUR-SITE-NAME.netlify.app/contact.html">
+
+    <link rel="stylesheet" href="styles.min.css">
+
+    <!-- Person structured data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Shruti Randhe",
+        "jobTitle": "Aspiring UI/UX Designer",
+        "description": "MCA student learning HTML, CSS, JavaScript, and Figma.",
+        "email": "shrutirandhe423@gmail.com",
+        "url": "https://YOUR-SITE-NAME.netlify.app/"
+    }
+    </script>
 </head>
+
 <body>
     <header>
         <h1>My Portfolio</h1>
-        <nav>
+
+        <nav aria-label="Main navigation">
             <a href="index.html">Home</a>
             <a href="projects.html">Projects</a>
-            <a href="contact.html">Contact</a>
+            <a href="contact.html" aria-current="page">Contact</a>
         </nav>
     </header>
 
     <main>
         <section class="content">
             <h2>Contact Me</h2>
-            <p>Feel free to contact me using the form below.</p>
+            <p>Feel free to contact me using the details below.</p>
 
-            <form class="contact-form">
+            <p>
+                Email:
+                <a href="mailto:shrutirandhe423@gmail.com">
+                    shrutirandhe423@gmail.com
+                </a>
+            </p>
+
+            <form class="contact-form"
+                  action="mailto:shrutirandhe423@gmail.com"
+                  method="post"
+                  enctype="text/plain">
+
                 <label for="name">Full Name</label>
-                <input type="text" id="name"
-                       placeholder="Enter your name" required><br>
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Enter your name"
+                    autocomplete="name"
+                    required>
 
                 <label for="email">Email</label>
-                <input type="email" id="email"
-                       placeholder="Enter your email" required><br>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email"
+                    autocomplete="email"
+                    required>
 
                 <label for="message">Message</label>
-                <textarea id="message" rows="5"
-                          placeholder="Write your message"
-                          required></textarea><br>
+                <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    placeholder="Write your message"
+                    required></textarea>
 
                 <button type="submit">Send Message</button>
             </form>
@@ -42,7 +87,7 @@
     </main>
 
     <footer>
-        <p>&copy; 2026 Shruti | My Portfolio</p>
+        <p>&copy; 2026 Shruti Randhe | Portfolio</p>
     </footer>
 </body>
 </html>
